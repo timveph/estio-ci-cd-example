@@ -23,6 +23,7 @@ class TestBase(TestCase):
 
 class TestMain(unittest.TestCase):
 
+    pass
     # def test_response(self):
     #     response = self.client.get(url_for('index'))
         # self.assertEqual(response.status_code, 200, msg='Expecting status code of 200')
