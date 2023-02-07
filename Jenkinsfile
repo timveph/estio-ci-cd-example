@@ -35,13 +35,13 @@ pipeline {
             }
         }
 
-        stage('connect via ssh deploy server and run app') {
-            steps {
-                sh '''
-                   <\>
-                '''
-            }
-        }
+        // stage('connect via ssh deploy server and run app') {
+        //     steps {
+        //         sh '''
+        //            <\>
+        //         '''
+        //     }
+        // }
         
     }
 }
