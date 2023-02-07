@@ -21,11 +21,11 @@ pipeline {
                 sh '''
                       python3 -m pytest ./prime/tests/test_unit.py
                    '''
-            },
+            }
             steps {
                 sh '''
-                      python3 -m pytest ./main/tests/test_unit.py
-                   '''
+                        python3 -m pytest ./main/tests/test_unit.py
+                    '''
             }
         }
         stage('docker prune') {
