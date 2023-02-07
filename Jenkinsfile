@@ -21,7 +21,7 @@ pipeline {
                 sh '''
                       python3 -m pytest ./prime/tests/test_unit.py
                    '''
-            }
+            },
             steps {
                 sh '''
                       python3 -m pytest ./main/tests/test_unit.py
@@ -44,7 +44,7 @@ pipeline {
         //     steps {
         //         sh '''
         //         #!/bin/bash
-        //         ssh -i /home/jenkins/.ssh/myKey -o StrictHostKeyChecking=no ubuntu@10.0.1.11 << EOF
+        //         ssh -i /home/jenkins/.ssh/id_rsa -o StrictHostKeyChecking=no ubuntu@10.0.1.11 << EOF
         //         docker system prune -a -f
         //         docker-compose -f /home/ubuntu/estio-ci-cd-example/docker-compose.yaml up -d
         //         << EOF
