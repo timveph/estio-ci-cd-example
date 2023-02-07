@@ -40,7 +40,11 @@ pipeline {
         // stage('connect via ssh deploy server and run app') {
         //     steps {
         //         sh '''
-        //            <\>
+        //         #!/bin/bash
+        //         ssh -i /home/jenkins/.ssh/myKey -o StrictHostKeyChecking=no ubuntu@10.0.1.11 << EOF
+        //         docker system prune -a -f
+        //         docker-compose -f /home/ubuntu/estio-ci-cd-example/docker-compose.yaml up -d
+        //         << EOF
         //         '''
         //     }
         // }
