@@ -20,6 +20,8 @@ pipeline {
             steps {
                 sh '''
                       python3 -m pytest ./prime/tests/test_unit.py
+                      python3 -m pytest ./main/tests/test_unit.py
+                      python3 -m pytest ./converter/tests/test_unit.py
                    '''
             }
         }
